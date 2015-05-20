@@ -7,10 +7,20 @@
 
     <div id="comming-soon">
         <img id="lmno-logo" src={{ "/assets/lmno-logo-white.png" | prepend: site.baseurl }}  alt="ELemeno Logo">
-      <div id="cs-description">
-        <h1>COMING SOON</h1>
-      </div>
+	    <div id="cs-description">
+	      <h1>COMING SOON</h1>
+	    </div>
+		<div id="getting-started"></div>
     </div>
+      
+	 <script type="text/javascript">
+	   $("#getting-started")
+	   .countdown("2015/06/01", function(event) {
+	     $(this).text(
+	       event.strftime('%D %H  %M %S')
+	     );
+	   });
+	 </script>
 
   </body>
 
