@@ -15,8 +15,8 @@
     </div>
       
 	 <script type="text/javascript">
-	   $("#getting-started").countdown("2015/06/01", function(event){$(this).text(event.strftime('%D %H  %M %S'));});
-	   $("#getting-started").hover(function(){$('#getting-started').countdown('stop');$(this).text("DD HH MM SS")}, function(){$('#getting-started').countdown('resume')});
+	   $("#getting-started").countdown("2015/06/01", function(event){$(this).text(event.strftime('%D|%H|%M|%S'));});
+	   $("#getting-started").hover(function(){$('#getting-started').countdown('stop');$(this).text("DD|HH|MM|SS")}, function(){$('#getting-started').countdown('resume')});
 	 </script>
 
   </body>
