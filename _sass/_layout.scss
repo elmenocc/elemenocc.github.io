@@ -252,6 +252,7 @@ body{
     margin: 0 auto;
 
     #lmno-logo {
+        margin-top: 20px;
         width: 100%;
     }
     #logo-wrapper {
@@ -266,11 +267,16 @@ body{
         letter-spacing: 6px;
         line-height: 1.2em;
         text-align: center;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        
     }
 
     
 }
+
+.shadow{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 @media (orientation: portrait){
     #comming-soon{
         background-size: auto 100vh;
@@ -290,3 +296,54 @@ body{
     border: 3px solid white;
     margin: 20px;
 }
+
+.contact-icons{
+    position: relative;
+    margin: 15px auto 15px auto;;
+    width: 100%;
+    bottom: 2vh;
+
+    #meanwhile{
+        line-height: 1.2em;
+        margin-top: 2em;
+        font-size: 1em;
+    }
+
+    ul li{
+        display: inline;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        a{
+            text-decoration: none;
+
+            img{
+                height: 2.5em;
+                opacity: 0.80;
+                text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+            }
+            img:hover{
+                opacity: 1;
+            }
+        }
+
+    }
+
+}
+
+.reduced-size{
+    height: 3vh !important;
+}
+
+
+
+// .contact-icons{
+//     position: relative;
+// }
+
+// .contact-icons ul li a img{
+//     height: 1.5em;
+//     margin: 8px;
+//     position: relative;
+//     margin-top: 3em;
+// }
