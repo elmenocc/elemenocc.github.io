@@ -274,7 +274,7 @@ body{
 }
 
 .shadow{
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
 
 @media (orientation: portrait){
@@ -309,21 +309,26 @@ body{
         font-size: 1em;
     }
 
-    ul li{
-        display: inline;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        a{
-            text-decoration: none;
+    ul {
+        margin-bottom: 20px;
 
-            img{
-                height: 2.5em;
-                text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-                opacity: 1;
-            }
-            img:hover{
-                opacity: 0.80;
+        li{
+            display: inline;
+            list-style-type: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            a{
+                text-decoration: none;
+
+                img{
+                    height: 2.5em;
+                    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+                    opacity: 1;
+                }
+                img:hover{
+                    opacity: 0.80;
+                }
             }
         }
     }
