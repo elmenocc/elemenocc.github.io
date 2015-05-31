@@ -1,16 +1,29 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
   <link rel="icon" type="image/x-icon" href="{{ "/assets/icons/lmno-icon.ico" | prepend: site.baseurl }}"/>
 
   <title>ELEMENO CREATIVE COLLECTIVE - Coming soon</title>
+
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/component.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BSASE -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link href='http://fonts.googleapis.com/css?family=Exo+2:500' rel='stylesheet' type='text/css'>
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:500,200' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <!-- VENDORS -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <!-- JQUERY -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+      _initFormViewer("[100,,[]\n]\n", true);
+  </script>
 </head>

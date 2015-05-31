@@ -5,53 +5,68 @@
 
   <body>
 
-    <div id="comming-soon">
-        <img id="lmno-logo" src={{ "/assets/lmno-logo-white.png" | prepend: site.baseurl }}  alt="ELemeno Logo">
-	    <div id="cs-description">
-	      <h1 class="shadow">COMING SOON</h1>
-	    </div>
-		<div id="getting-started">
+  	{% include header.html %}
+	
+	<!-- SECTION 1 -->
+	<div class="section container-fluid" id="section1">
+
+		<div id="top-logo">
+				<img src="{{ "/assets/lmno-logo.png" | prepend: site.baseurl }}" alt="">
+			<!-- <a href="#" id="homeLogo">LMNO LOGO
+			</a> -->
 		</div>
-
-		<hr>
-		<div  class="contact-icons animated fadeInUp">
-
-			<h1 id="meanwhile" class="shadow">
-				MEANWHILE CONNECT
-				 WITH US HERE:
+			
+		<div id="top-desc" class="contact-icons">
+			<h1>
+				CREATE, <br>
+				INSPIRE, <br>
+				MOTIVATE.
 			</h1>
 
-			<hr><br>
-
-			<ul>
-				<li>
-					<a target="_blank" href="http://twitter.com/ElemenoOfficial">
-						<img class="shadow" src="/assets/icons/twitter-icon.svg" alt="twitter icon">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="http://facebook.com/ElemenoOfficial">
-						<img class="shadow" src="/assets/icons/face-icon.svg" alt="facebook icon">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="http://soundcloud.com/ElemenoCollective">
-						<img class="shadow" src="/assets/icons/cloud-icon.svg" alt="soundcloud icon">
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://www.youtube.com/channel/UCubsB5sJevfKXenM7QWA55g">
-						<img class="shadow" src="/assets/icons/youtube-icon.svg" alt="youtube icon">
-					</a>
-				</li>
-			</ul>
+			<div class="cl-effect-1">
+				<ul>
+					<li><a target="_blank" href="http://twitter.com/ElemenoOfficial"><img class="shadow" src="/assets/icons/twitter-icon.svg" alt="twitter icon"></a></li>
+					<li><a target="_blank" href="http://facebook.com/ElemenoOfficial"><img class="shadow" src="/assets/icons/face-icon.svg" alt="facebook icon"></a></li>
+					<li><a target="_blank" href="http://soundcloud.com/ElemenoCollective"><img class="shadow" src="/assets/icons/cloud-icon.svg" alt="soundcloud icon"></a></li>
+					<li><a target="_blank" href="https://www.youtube.com/channel/UCubsB5sJevfKXenM7QWA55g"><img class="shadow" src="/assets/icons/youtube-icon.svg" alt="youtube icon"></a></li>
+				</ul>
+			</div>
 		</div>
-    </div>
-      
-	 <script type="text/javascript">
-	   $("#getting-started").countdown("2015/06/01", function(event){$(this).text(event.strftime('%D|%H|%M|%S'));});
-	   $("#getting-started").hover(function(){$('#getting-started').countdown('stop');$(this).text("DD|HH|MM|SS")}, function(){$('#getting-started').countdown('resume')});
-	 </script>
+	</div>
+
+	<div id="section2" class="section">
+
+		<p>
+			Elemeno Collective was started Feb 26th 2015 in Toronto by a crew of like-minded individuals looking to establish a creative movement in order to assist underground artists pursue and showcase their work.
+			<br>
+			<span> ★ ★ ★ ★ ★ </span> 
+		</p>
+
+	</div>
+
+	<div id="section3" class="section">
+
+		<div class="white">
+			<h2>
+				We are always looking for new recruits and partnerships
+				<br>
+				<span> ★ ★ ★ ★ ★ </span> 
+			</h2>
+
+			<p>
+				Send us a message and some of your work in the <a href="#contact">Submit Section</a>. Let us know what you would bring to the table to benefit our team!
+			</p>
+		</div>		
+
+		<div class="dark">
+
+			{% include g_form.html %}
+
+		</div>
+
+	</div>
+
+	{% include footer.html %}
 
   </body>
 

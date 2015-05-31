@@ -42,6 +42,9 @@ $on-laptop:        800px;
     }
 }
 
+body{
+	overflow-x: hidden;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -50,3 +53,355 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+// tr00
+
+.navbar{
+	background-color: rgba(0,0,0,0.1);
+
+	ul{
+		li{
+			a{
+				color: white;
+			}
+			a:hover{
+				background-color: rgba(0,0,0,0);
+			}
+		}
+	}
+}
+
+.navbar-brand{
+	padding: 5px 20px;
+}
+
+.container-fluid{
+	// overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+.section{
+	background-color: white;
+	min-height: 100vh;
+	height: 100vh;
+}
+
+#section1{
+	background-color: transparent;
+	padding-top: 8%;
+}
+
+#top-logo, #top-desc{
+	width: 50%;
+	float: left;
+	padding: 3em;
+}
+
+#top-logo img{
+	opacity: 0.8;
+}
+
+#top-desc h1{
+	margin: 5% auto;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #242424;
+	font-size: 9em;
+	letter-spacing: -2px;
+	line-height: 1.1em;
+}
+
+.contact-icons ul{
+	margin: 0;
+}
+
+.contact-icons ul li:hover{
+	opacity: 0.8;
+}
+
+a{
+	color: orangered;
+}
+
+
+/* 2 */
+#section2{
+	background-color: #232323;
+	background: url('/assets/dundas-square.png') center center fixed; 
+	background-size: 110%;
+	height: 100vh;
+}
+
+#section2 h1{
+	padding: 0.5em 0;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 8em;
+	text-align: center;
+}
+
+#section2 p{
+	font-size: 2.1em;
+	color: white;
+	text-align: center;
+	max-width: 900px;
+	padding-top: 20%;
+	margin: 0 auto;
+	font-weight: 200;
+}
+
+/* 3 */
+.white{
+	background-color: white;
+	color: #232323;
+}
+.dark{
+	color:white;
+	background-color: #121212;
+}
+
+.dark, .white{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.white h2, .black h2, .ss-form-title{
+	margin: 1em;
+	font-size: 4em;
+	font-weight: 400;
+
+}
+
+.white h2 span{
+	font-size: 0.4em;
+	color: #232425;
+}
+
+.white p{
+	font-size:2.5em;
+	margin: 1.5em;
+}
+
+/* 4 */
+#section4 p{
+	line-height: 1.4em;
+}
+
+/* TWITTER */
+.twitter-timeline{
+}
+
+.widget-wrapper{
+	width: 500px;
+
+	margin: 15em auto;
+}
+
+.heart{
+	color: black !important;
+}
+.heart:hover{
+	color: red !important;
+	text-decoration: none;
+}
+
+
+#top-nav{
+}
+
+.nav{
+
+margin: 0 auto;
+}
+
+.nav a{
+font-size: 0.8em;
+}
+
+.site-footer{
+	background-color: #fafafa;
+	padding: 10px 0;
+}
+
+.made{
+	text-align: center;
+	margin-bottom: 0 !important;
+}
+
+
+/* Custom select style, from: https://coderwall.com/p/w7npmq and http://codepen.io/gnclmorais/pen/cHkqt */
+.custom-select {
+  padding: 0;
+  border: 3px solid white;
+  border-radius: 0;
+  width: 300px;
+  height: 40px;
+  padding-left: 5px;
+  margin: 20px auto 25px;
+  overflow: hidden;
+  font-size: 1.2em;
+  background: transparent url({{ "/assets/icons/triangle_white.png" | prepend: site.baseurl }}) no-repeat 94% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select select {
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+    text-overflow: '';
+}
+
+.custom-select select:focus {
+  outline: none;
+}
+
+.ss-required-asterisk{
+  display: inline;
+  color: orangered;
+}
+
+label{
+  display: block;
+}
+
+input, textarea{
+  margin: 20px auto 25px;
+  background-color: transparent;
+  overflow: hidden;
+  font-size: 1.2em;
+  border: 3px solid white;
+  padding-left: 5px;
+  width: 300px;
+  height: 40px;
+}
+textarea{
+  height: 120px;
+}
+
+.ss-form-container{
+  max-width: 320px;
+  margin: 0 auto
+}
+
+.ss-form-title{
+  margin: 1em 0 !important;
+  font-size: 3.5em !important;
+}
+
+.ss-question-list{
+  margin: 0;
+}
+
+#ss-submit:hover{
+	background-color: white;
+	color: #232323;
+}
+
+
+@media (max-width: 1280px){
+	#top-desc h1{
+		font-size: 7em;
+	}
+
+	#section1{
+		padding-top: 14%;
+	}
+
+	#section2{
+		background-size: auto 100%;
+		max-height: 600px;
+		padding: 0 15px;
+	}
+
+	#section2 p{
+		
+	}
+
+	.section{
+		font-size: 0.75em;
+	}
+}
+
+
+@media (max-width: 820px){
+
+	#section1{
+		max-height: 600px;
+	}
+
+	#top-logo{
+		width: 100%;
+		clear: both;
+		float: none;
+		padding:  0;
+	}
+
+
+	#top-logo img{
+		margin: 0 auto;
+		width: 25%;
+		width: 100%;
+	}
+
+	#top-desc, .dark, .white{
+		width: 100vw !important;
+	}
+
+
+	footer{
+		clear: both;
+	}
+
+
+	#section2{
+		max-height: 400px;
+	}
+	#section2 p {
+		padding-top: 15%;
+
+	}
+}
+
+@media (max-width: 767px){
+	 .nav>li {
+	  display: inline;
+	  float: left;
+	  font-size: 0.6em;
+	}
+}
+
+@media (max-width: 420px) and (orientation: portrait){
+
+	.section{
+	}
+
+	.ss-form-container{
+		margin-left: 10px;
+
+	}
+
+	.section h2{
+		font-size: 3em;
+	}
+
+	.section{
+		font-size: 0.6em;
+	}
+
+	#top-desc{
+		padding: 1em;
+	}
+
+}
