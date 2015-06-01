@@ -414,7 +414,8 @@ textarea{
 	}
 
 	#section2{
-		background: url('/assets/dundas-square.png') center center; 
+		background-image: none; //url('/assets/dundas-square.png') center center; 
+		background-color: white;
 	}
 	.ss-form-container{
 		margin-left: 10px;
