@@ -162,7 +162,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 50px 0;
 }
 
 .page-heading {
@@ -234,6 +234,35 @@
         }
     }
 }
+
+ .post-thumb{
+    width: 280px;
+    height: auto;
+  }
+
+  .post-card{
+    float: left;
+    background-color: #fbfbfb;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ececec;
+    transition: background-color 0.5s ease;
+  }.post-card:hover{
+    background-color: #eaeaea;
+  }
+
+  .post-card h2{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  .rss-subscribe{
+    padding-top: 50px; 
+  }
+
+  .clear{
+    clear: both;
+  }
 
 body{
     background: url('/assets/bg-buildings.png') no-repeat center center fixed; 

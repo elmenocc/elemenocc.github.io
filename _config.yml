@@ -2,11 +2,11 @@
 title: Elemeno
 email: info@elemeno.cc
 description: > # this means to ignore newlines until "baseurl:"
-  Made with ♥ in Toronto
+  Elemeno Collective is a crew of like-minded individuals looking to establish a creative movement in order to assist underground artists pursue and showcase their work.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://elemeno.cc" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: elemeno
+github_username:  lmnocc
 
 # Build settings
 markdown: kramdown
