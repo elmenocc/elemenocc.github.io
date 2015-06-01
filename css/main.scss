@@ -58,7 +58,7 @@ body{
 // tr00
 
 .navbar{
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0);
 
 	ul{
 		li{
@@ -369,6 +369,10 @@ textarea{
 
 	#top-desc, .dark, .white{
 		width: 100vw !important;
+	}
+
+	.navbar{
+		background-color: rgba(0,0,0,0.1);
 	}
 
 
