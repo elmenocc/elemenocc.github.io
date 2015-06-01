@@ -406,11 +406,11 @@ textarea{
 @media (max-width: 420px) and (orientation: portrait){
 
 	body{
-	    background-size: auto 100vh;
+	    background-size: center 100vw;
     }
 
 	.section{
-		overflow-x: hidden; 
+		overflow: hidden; 
 	}
 
 	#section2{
