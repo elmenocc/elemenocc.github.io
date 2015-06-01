@@ -406,6 +406,7 @@ textarea{
 @media (max-width: 420px) and (orientation: portrait){
 
 	.section{
+		overflow-x: hidden; 
 	}
 
 	#section2{
