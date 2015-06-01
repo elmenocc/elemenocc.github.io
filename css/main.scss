@@ -398,6 +398,9 @@ textarea{
 	  float: left;
 	  font-size: 0.6em;
 	}
+	.nav>li>a {
+	  padding: 10px 10px;
+	}
 }
 
 @media (max-width: 420px) and (orientation: portrait){
